@@ -1,3 +1,5 @@
+// Rakamların faktöriyelini bulan program
+
 import java.util.Scanner;
 public class fact {
     public static void main(String[] args) {
@@ -11,3 +13,4 @@ public class fact {
         System.out.println(n + "! = " + fact);
     }
 }
+
