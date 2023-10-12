@@ -1,7 +1,7 @@
 // Rakamların faktöriyelini bulan program
 
 import java.util.Scanner;
-public class fact {
+public class Fact {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Faktöriyeli alınacak sayıyı giriniz: ");
