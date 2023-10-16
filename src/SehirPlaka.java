@@ -166,6 +166,14 @@ public class SehirPlaka {
             System.out.println("Osmaniye");
         } else if (plaka == 81) {
             System.out.println("Düzce");
+        } else if (plaka == 82) {
+            System.out.println("Musul");
+        } else if (plaka == 83) {
+            System.out.println("Kerkuk");
+        } else if (plaka == 84) {
+            System.out.println("Halep");
+        } else if (plaka == 85) {
+            System.out.println("KKTC");
         } else {
             System.out.println("Hatalı giriş yaptınız.");
         }
@@ -176,3 +184,7 @@ public class SehirPlaka {
         }
 }
 }
+/* @Author:Mert PEHLIVAN
+ * Date: 17.10.2023 Tuesday
+ * IDE: intellij idea
+ */

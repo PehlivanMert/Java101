@@ -6,3 +6,7 @@ public class Hesap {
         System.out.print(a);
     }
 }
+                                        /*Author: Mert PEHLIVAN
+                                                * Date: 17.10.2023 Tuesday
+                                                  * IDE: intellij idea
+                                         */
