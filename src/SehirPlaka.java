@@ -177,11 +177,7 @@ public class SehirPlaka {
         } else {
             System.out.println("Hatalı giriş yaptınız.");
         }
-        {
-            System.out.println("Programdan çıkmak için herhangi bir tuşa basınız.");
-            input.nextLine();
-
-        }
+        
 }
 }
 /* @Author:Mert PEHLIVAN
