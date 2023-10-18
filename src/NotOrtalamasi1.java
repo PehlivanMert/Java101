@@ -34,11 +34,9 @@ public class NotOrtalamasi1 {
         }
 
 
-
-    /*Author: Mert PEHLIVAN
-     * Date: 17.10.2023 Tuesday
-     * IDE: intellij idea
-     */
+// @Author: Mert PEHLIVAN
+// * Date: 17.10.2023 Tuesday
+// * IDE: intellij idea
 
 
 
