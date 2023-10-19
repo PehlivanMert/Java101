@@ -6,7 +6,7 @@ public class Kdv2 {
         System.out.print("Ürünün Kdv hariç fiyatını giriniz: ");
         int urunFiyati = input.nextInt();
       boolean kosul1 = urunFiyati < 1000;
-        double kdvOrani1 = 0.20;
+        double kdvOrani1 = 0.18;
         double kdvOrani2 = 0.08;
         double kdv = urunFiyati * kdvOrani1;
         double kdv2 = urunFiyati * kdvOrani2;
