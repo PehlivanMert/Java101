@@ -15,6 +15,7 @@ public class Kdv2 {
         System.out.println(kosul1 ? "Kdv dahil fiyatı: " + urunkdvdahilfiyat : "Kdv dahil fiyatı: " + urunkdvdahilfiyat2);
     }
 }
+
 /* @Author: Mert PEHLIVAN
  Date: 19.10.2023 Tuesday
  IDE: intellij idea
