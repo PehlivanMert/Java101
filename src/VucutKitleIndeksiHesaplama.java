@@ -20,6 +20,6 @@ public class VucutKitleIndeksiHesaplama {
 
 /*
 @ Author: Mert Pehlivan
-@ Date: 15.10.2019
+@ Date: 15.10.2023
 @ IDE: IntelliJ IDEA
  */
