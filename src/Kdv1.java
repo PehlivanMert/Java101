@@ -1,5 +1,5 @@
 import java.util.Scanner;
-        public class KdvHesaplama {
+        public class Kdv1 {
             public static void main(String[] args) {
                 Scanner input = new Scanner(System.in);
                 System.out.print("Ürünün Kdv hariç fiyatını giriniz: ");
