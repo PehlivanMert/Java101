@@ -34,11 +34,11 @@ public class UcakBiletiHesaplayanProg {
 
 
 
-                    if ( yas > 1 || yas < 12) {
+                    if ( yas > 0 && yas < 12) {
 
                         System.out.println("Bilet Ücretiniz: " + indirim1 + "TL");
 
-                    } else if (yas < 24 || yas > 12) {
+                    } else if (yas < 24 && yas > 12) {
 
                         System.out.println("Bilet Ücretiniz: " + indirim2 + "TL");
 
@@ -46,7 +46,7 @@ public class UcakBiletiHesaplayanProg {
 
                         System.out.println("Bilet Ücretiniz: " + indirim3 + "TL");
 
-                    } else if (yas < 65 || yas > 23){
+                    } else if (yas < 65 && yas > 23){
 
                         System.out.println("Bilet Ücretiniz: " + tutar + " TL");
 
@@ -68,11 +68,11 @@ public class UcakBiletiHesaplayanProg {
                 if (km > 0) {
 
 
-                    if (yas > 1 || yas < 12) {
+                    if (yas > 0 && yas < 12) {
 
                         System.out.println("Bilet Ücretiniz: " + ((indirim1-(indirim1 * 0.20))*2) + "TL");
 
-                    } else if (yas < 24 || yas > 12) {
+                    } else if (yas < 24 && yas > 12) {
 
                         System.out.println("Bilet Ücretiniz: " + ((indirim2-(indirim2 * 0.20))*2) + "TL");
 
@@ -80,7 +80,7 @@ public class UcakBiletiHesaplayanProg {
 
                         System.out.println("Bilet Ücretiniz: " + ((indirim3-(indirim3 * 0.20))*2) + "TL");
 
-                    } else if (yas < 65 || yas > 23 ) {
+                    } else if (yas < 65 && yas > 23 ) {
 
                         System.out.println("Bilet Ücretiniz: " + ((tutar-(tutar * 0.20))*2) + "TL");
 
