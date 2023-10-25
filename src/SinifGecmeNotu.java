@@ -28,16 +28,19 @@ public class SinifGecmeNotu {
 
         ortalama= (mat+fizik+turkce+kimya+muzik)/5;
 
-        if(ortalama>=55) {
+        // Notlar 0 ile 100 arasında değilse hesaplamaya katılmasın ve uyarı olsun.
 
-            System.out.println("Ortalamanız: " + ortalama);
+        if(mat>0 && mat<=100 && fizik>0 && fizik<=100 && turkce>0 && turkce<=100 && kimya>0 && kimya<=100 && muzik>0 && muzik<=100){
 
-            System.out.println("Sınıfı Geçtiniz");
-
-        } else{
-            System.out.println("Ortalamanız: " + ortalama);
-
-            System.out.println("Kaldınız");
+            if(ortalama>=55){
+                System.out.println("Sınıfı Geçtiniz. Ortalamanız: "+ortalama);
+            }
+            else{
+                System.out.println("Sınıfta Kaldınız. Ortalamanız: "+ortalama);
+            }
+        }
+        else{
+            System.out.println("Lütfen 0 ile 100 arasında bir not giriniz.");
         }
     }
 }

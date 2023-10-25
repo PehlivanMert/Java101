@@ -21,18 +21,22 @@ public class UcakBiletiHesaplayanProg {
 
         tutar = km * 0.10;
 
+        //Temel indirimleri tanımladım.
+
         double indirim1 = tutar - (tutar * 0.50);
         double indirim2 = tutar - (tutar * 0.10);
         double indirim3 = tutar - (tutar * 0.30);
 
+        // Uçuş Tipine göre switch case ile koşul oluşturdum.
 
         switch (tip) {
 
             case 1:
+            // Km sıfırdan büyük olmalı.
 
                 if (km > 0) {
 
-
+                    // yaşlara göre indirimli fiyatları yazdırdım.
 
                     if ( yas > 0 && yas < 12) {
 
@@ -62,6 +66,7 @@ public class UcakBiletiHesaplayanProg {
                 }
                 break;
 
+                // Gidiş Dönüş için switch case oluşturdum.
 
             case 2:
 

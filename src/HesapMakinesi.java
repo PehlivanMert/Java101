@@ -39,6 +39,7 @@ public class HesapMakinesi {
             break;
 
             case 4 :
+                    // Bölme işleminde 0'a bölme hatası
 
                 if (number2 !=0) {
 

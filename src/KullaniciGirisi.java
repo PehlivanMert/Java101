@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class KullaniciGirisi {
     public static void main(String[] args) {
+
         String userName, password, newpassword,change;
 
 
@@ -11,13 +12,19 @@ public class KullaniciGirisi {
         System.out.print("Şifrenizi Giriniz: ");
         password = input.nextLine();
 
+        // Kullanıcı Adı ve Şifre Kontrolü
+
         if (userName.equals("PehlivanMert") && (password.equals("Mert12345"))) {
 
             System.out.print("Giriş Başarılı");
 
+            //Kullanıcı adı yanlışsa
+
         } else if (!userName.equals("PehlivanMert") && (password.equals("Mert12345"))) {
 
             System.out.println("Kullanıcı Adınızı Kontrol Ediniz!");
+
+            // Şifre yanlışsa uyarı mesajı ve şifre değiştirme seçeneği
 
         } else if (userName.equals("PehlivanMert") && (!password.equals("Mert12345"))) {
 
@@ -27,9 +34,13 @@ public class KullaniciGirisi {
 
             change = input.nextLine();
 
+            // Şifre değiştirme işlemi
+
             switch (change) {
 
                 case "1":
+
+                    // Eski ve yeni şifre aynı ise uyarı mesajı
 
                     System.out.print("Yeni Parolanızı Giriniz: ");
 
@@ -46,13 +57,15 @@ public class KullaniciGirisi {
 
                     break;
 
+                    // Şifre değiştirmek istemiyorsa;
+
                 case "2":
 
                     System.out.println("Tekrar Deneyiniz! ");
 
                     break;
             }
-
+                    // Kullanıcı adı ve şifre yanlışsa;
         } else {
 
 
