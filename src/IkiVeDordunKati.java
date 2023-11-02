@@ -7,17 +7,18 @@ public class IkiVeDordunKati {
         Scanner deger= new Scanner(System.in);
         int sayi;
         int total = 0;
-
+        int i = 0 ;
         do{
             System.out.print("Sayıyı Giriniz: ");
             sayi= deger.nextInt();
 
-            if(sayi % 2 ==0 || sayi % 4 == 0) {
+            if(sayi % 2 ==0 && sayi % 4 == 0) {
 
                 total += sayi;
+                i++ ;
             }
         }while (sayi % 2 == 0);
 
-        System.out.println("İkiye ve Dörde tam bölünen sayıların toplamı: " + total);
+        System.out.println("İkiye ve Dörde tam bölünen sayıların ortalması: " + total/i);
     }
 }
