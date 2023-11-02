@@ -7,7 +7,6 @@ public class MukemmelSayi {
         int n1;
         int total = 0;
 
-
         System.out.print("Bir Sayı Giriniz: ");
         n1 = giris.nextInt();
 
