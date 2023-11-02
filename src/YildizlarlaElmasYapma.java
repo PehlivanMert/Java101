@@ -23,9 +23,9 @@ public class YildizlarlaElmasYapma{
             System.out.println();
         }
 
-        for (int i=0 ;i <= a;i++){
+        for (int i=0 ;i <= a; i++){
 
-            for (int b=0; b < i ;b++){
+            for (int b=0; b < i ; b++){
                 System.out.print(" ");
             }
 
