@@ -9,16 +9,16 @@ public class EnBuyukEnKucuk {
         int enKucuk = 0;
         for (int i = 1; i <= sayi; i++) {
             System.out.print(i + ". sayıyı giriniz: ");
-            int sayi2 = input.nextInt();
+            int sayii = input.nextInt();
             if (i == 1) {
-                enBuyuk = sayi2;
-                enKucuk = sayi2;
+                enBuyuk = sayii;
+                enKucuk = sayii;
             }
-            if (sayi2 > enBuyuk) {
-                enBuyuk = sayi2;
+            if (sayii > enBuyuk) {
+                enBuyuk = sayii;
             }
-            if (sayi2 < enKucuk) {
-                enKucuk = sayi2;
+            if (sayii < enKucuk) {
+                enKucuk = sayii;
             }
         }
         System.out.println("En büyük sayı: " + enBuyuk);

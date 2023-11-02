@@ -16,6 +16,7 @@ public class UsluSayi {
 
         for (i = 1; i <= us; i++) {
             total *= taban;
+            //total = 4 * 2
         }
         System.out.println("Sonuc: " + total);
     }

@@ -1,7 +1,7 @@
 public class BreakContinue {
     public static void main(String[] args) {
 
-        for(int i = 1 ; i<=10 ; i++) {
+        for(int i = 1 ; i<=50 ; i++) {
             /*if(i==6) {
                 System.out.println("i değeri 6 dır");
                 break;
@@ -9,6 +9,10 @@ public class BreakContinue {
 
             if(i==5) {
                 System.out.println("Amasya");
+                continue;
+            }
+            if(i == 48) {
+                System.out.println("Rabia");
                 continue;
             }
             System.out.println(i);

@@ -8,7 +8,6 @@ public class TekSayi {
 
         for(sayi=1 ; sayi<=deger; sayi++) {
             if (sayi % 2 == 0) {
-
                 continue;
             }
                 System.out.print(sayi + ",");

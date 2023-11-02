@@ -8,7 +8,7 @@ public class Fact {
         int n = input.nextInt();
         int fact = 1;
         for (int i = 1; i <= n; i++) {
-            fact *= i;
+            fact *= i; //fact = fact * i
         }
         System.out.println(n + "! = " + fact);
     }

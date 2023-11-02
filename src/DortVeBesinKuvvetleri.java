@@ -13,8 +13,10 @@ public class DortVeBesinKuvvetleri {
 
         System.out.print( i + ",");
         }
+
         System.out.println();
         System.out.println();
+
         System.out.print("5'in kuvvetleri : ");
 
         for (int i = 1 ; i <= sayi ; i*= 5) {
