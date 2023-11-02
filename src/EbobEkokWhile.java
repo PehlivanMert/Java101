@@ -12,7 +12,7 @@ public class EbobEkokWhile {
         System.out.print("b sayısını giriniz: ");
         b= input.nextInt();
 
-        if(a < b) {
+        if(a <= b) {
             while (i <= a) {
 
                 if (a % i == 0 && b % i == 0) {
