@@ -1,3 +1,4 @@
+// 1-100 arası Asal sayıları bulan programı yazınız.
 public class AsalSayilar {
     public static void main(String[] args) {
         int sayi = 0;
