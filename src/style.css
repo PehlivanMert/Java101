@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.kronometre {
+    font-size: 2em;
+}
+
+button {
+    margin-left: 10px;
+}
