@@ -5,3 +5,6 @@
 * Java Basic
 * Java101
 * Java102
+
+## Requirements
+* Java Development Kit (JDK)
