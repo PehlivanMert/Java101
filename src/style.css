@@ -4,12 +4,45 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: #ffeb3b; /* Pastel sarı tonu */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yeni font */
 }
 
-.kronometre {
-    font-size: 2em;
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 4em; /* Font boyutunu arttırdık */
+    background-color: #e74c3c; /* Pastel kırmızı tonu */
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px; /* Köşe yuvarlama */
+    display: inline-block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.countup {
+    margin-bottom: 30px; /* Alt boşluğu arttırdık */
+}
+
+.controls {
+    margin-top: 30px; /* Üst boşluğu arttırdık */
 }
 
 button {
-    margin-left: 10px;
+    font-size: 1.2em; /* Buton font boyutunu arttırdık */
+    margin: 0 15px; /* Butonlar arasındaki boşluğu arttırdık */
+    padding: 15px 20px; /* Buton iç boşluğunu arttırdık */
+    cursor: pointer;
+    background-color: #3498db; /* Pastel mavi tonu */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s; /* Ekledik: Transform için geçiş efekti */
+}
+
+button:hover {
+    background-color: #2980b9; /* Daha koyu mavi tonu */
+    transform: scale(1.1); /* Ekledik: Hover olduğunda butonun boyutunu büyütme */
 }

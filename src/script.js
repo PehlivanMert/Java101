@@ -1,18 +1,27 @@
 let timer;
+let startTime;
+let isRunning = false;
 let milliseconds = 0;
 let seconds = 0;
 let minutes = 0;
 
 function start() {
-    timer = setInterval(updateTime, 10);
+    if (!isRunning) {
+        isRunning = true;
+        startTime = performance.now() - milliseconds;
+        requestAnimationFrame(updateTime);
+    }
 }
 
 function stop() {
-    clearInterval(timer);
+    if (isRunning) {
+        isRunning = false;
+        cancelAnimationFrame(timer);
+    }
 }
 
 function reset() {
-    clearInterval(timer);
+    stop();
     milliseconds = 0;
     seconds = 0;
     minutes = 0;
@@ -20,21 +29,23 @@ function reset() {
 }
 
 function updateTime() {
-    milliseconds += 10;
+    if (isRunning) {
+        const elapsedTime = performance.now() - startTime;
+        milliseconds = Math.floor(elapsedTime % 1000);
+        seconds = Math.floor(elapsedTime / 1000) % 60;
+        minutes = Math.floor(elapsedTime / (1000 * 60));
 
-    if (milliseconds === 1000) {
-        milliseconds = 0;
-        seconds++;
-
-        if (seconds === 60) {
-            seconds = 0;
-            minutes++;
-        }
+        updateDisplay();
+        requestAnimationFrame(updateTime);
     }
+}
 
+function updateDisplay() {
     document.getElementById('milliseconds').innerText = padNumber(milliseconds);
     document.getElementById('seconds').innerText = padNumber(seconds);
     document.getElementById('minutes').innerText = padNumber(minutes);
+
+    document.title = `${padNumber(minutes)}:${padNumber(seconds)}:${padNumber(milliseconds)}`;
 }
 
 function padNumber(number) {

@@ -19,7 +19,7 @@ public class TersUcgen{
             for (int c=0; c <= 2*(a-i) ; c++){
                 System.out.print("*");
             }
-
+            // a:basamak sayısı , b:boşluk sayısı , c=yıldız sayısı
             System.out.println();
         }
     }

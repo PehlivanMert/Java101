@@ -7,12 +7,18 @@
     <title>Kronometre</title>
 </head>
 <body>
-    <div class="kronometre">
-        <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
-        <button onclick="start()">Başlat</button>
-        <button onclick="stop()">Durdur</button>
-        <button onclick="reset()">Sıfırla</button>
+<div class="timer-container">
+    <div class="timer">
+        <div class="countup" id="countup">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="controls">
+            <button onclick="start()">Başlat</button>
+            <button onclick="stop()">Durdur</button>
+            <button onclick="reset()">Sıfırla</button>
+        </div>
     </div>
-    <script src="script.js"></script>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
